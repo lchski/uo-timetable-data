@@ -26,7 +26,7 @@ for file in files:
 
     soup = BeautifulSoup(open(file, "r", encoding="utf-8"), "html.parser")
 
-    courseTables = soup.find_all(name="div", id="20169")
+    courseTables = soup.find_all(name="div", class_="schedule")
 
     for courseTable in courseTables:
         sectionTables = courseTable.find_all(name="table")
