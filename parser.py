@@ -76,6 +76,9 @@ for file in files:
 
         courseData['code'] = courseTable.find(class_="Section").text[:7]
 
+        courseData["year"] = courseData["code"][3]
+        courseData["language"] = "English" if 1 <= int(courseData["code"][4]) <= 4 else "French" if 5 <= int(courseData["code"][4]) <= 8 else "Bilingual/Unofficial/Unspecified"
+
         courseData['sections'] = courseSections
 
         disciplineCourses.append(courseData.copy())
