@@ -52,7 +52,7 @@ for file in files:
                 ]
 
                 for keyAndClass in keysAndClasses:
-                    dataElement = courseTable.find(class_=keyAndClass[1])
+                    dataElement = sectionLecture.find(class_=keyAndClass[1])
 
                     if dataElement is not None:
                         lectureData[keyAndClass[0]] = re.sub('\s+', ' ', dataElement.text).strip()
