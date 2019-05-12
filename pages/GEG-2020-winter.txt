@@ -1,0 +1,810 @@
+ 	
+Collapse section GEG 1302 - Places and Spaces of Human Activity GEG 1302 - Places and Spaces of Human Activity 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 13:00 - 14:20
+We 11:30 - 12:50
+	
+150 Louis Pasteur (STM) 224
+150 Louis Pasteur (STM) 224
+	
+Luisa Veronis
+Luisa Veronis
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 1702 - Espaces et lieux de l'activité humaine GEG 1702 - Espaces et lieux de l'activité humaine 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 14:30 - 15:50
+Mo 16:00 - 17:20
+	
+55 Laurier (DMS) 1140
+55 Laurier (DMS) 1140
+	
+Marc Brosseau
+Marc Brosseau
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 2110 - Sustainable Cities GEG 2110 - Sustainable Cities 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 19:00 - 21:50
+	
+60 University (SMD) 425
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 2301 - Geomorphology GEG 2301 - Geomorphology 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 13:00 - 14:20
+Th 11:30 - 12:50
+	
+550 Cumberland (TBT) 0019
+550 Cumberland (TBT) 0019
+	
+Luke Copland
+Luke Copland
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Th 13:00 - 14:20
+Th 13:00 - 14:20
+	
+60 University (SMD) 039
+60 University (SMD) 041
+	
+Staff
+Staff
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 2320 - Introduction to Geomatics GEG 2320 - Introduction to Geomatics 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+B00-LEC
+FullSess.
+	
+Mo 17:30 - 20:20
+Mo 17:30 - 20:20
+	
+60 University (SMD) 039
+60 University (SMD) 041
+	
+Michael C. Sawada
+Michael C. Sawada
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+B01-LAB
+FullSess.
+	
+Mo 20:30 - 21:50
+Mo 20:30 - 21:50
+	
+60 University (SMD) 039
+60 University (SMD) 041
+	
+Staff
+Staff
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 2508 - Espaces sous tension GEG 2508 - Espaces sous tension 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 13:00 - 14:20
+We 11:30 - 12:50
+	
+125 University (MNT) 207
+125 University (MNT) 207
+	
+Marc Brosseau
+Marc Brosseau
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 2701 - Géomorphologie GEG 2701 - Géomorphologie 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 14:30 - 17:20
+	
+60 University (SMD) 041
+	
+Jean Bjornson
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Th 11:30 - 12:50
+	
+60 University (SMD) 041
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 2720 - Introduction à la géomatique GEG 2720 - Introduction à la géomatique 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 08:30 - 11:20
+	
+60 University (SMD) 039
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Fr 13:00 - 14:20
+	
+60 University (SMD) 039
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 3101 - Advanced Geomorphology GEG 3101 - Advanced Geomorphology 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 13:00 - 14:20
+Fr 11:30 - 12:50
+	
+60 University (SMD) 041
+55 Laurier (DMS)11161
+	
+Denis Lacelle
+Denis Lacelle
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+We 11:30 - 12:50
+	
+60 University (SMD) 041
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 3105 - Remote Sensing GEG 3105 - Remote Sensing 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 08:30 - 11:20
+	
+60 University (SMD) 039
+	
+Anders Jensen Knudby
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Mo 13:00 - 14:20
+	
+60 University (SMD) 039
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 3303 - Health Geography GEG 3303 - Health Geography 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 19:00 - 21:50
+	
+65 University (MRT) 212
+	
+Eric James Crighton
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 3700 - Thèmes choisis en géographie physique GEG 3700 - Thèmes choisis en géographie physique 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Th 14:30 - 17:20
+	
+65 University (MRT) 015
+	
+André Ernest J. Viau
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 3702 - Gestion des ressources naturelles et de l'environnement GEG 3702 - Gestion des ressources naturelles et de l'environnement 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 14:30 - 17:20
+	
+145 Jean-Jacq. Luss. (LMX) 407
+	
+Renate Margarete Sander-Regier
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 3704 - Villes du monde GEG 3704 - Villes du monde 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 11:30 - 12:50
+Fr 13:00 - 14:20
+	
+136 Jean-Jacques L. (VNR) 3035
+136 Jean-Jacques L. (VNR) 5070
+	
+Kenza Benali
+Staff
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 3707 - Patrimoine urbain et tourisme culturel GEG 3707 - Patrimoine urbain et tourisme culturel 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 11:30 - 12:50
+Th 13:00 - 14:20
+	
+200 Wilbrod (WLD) 108
+145 Jean-Jacq. Luss. (LMX) 242
+	
+Kenza Benali
+Kenza Benali
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 4101 - Permafrost Environments GEG 4101 - Permafrost Environments 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 08:30 - 11:20
+	
+45 University (THN) 054
+	
+Antoni G. Lewkowicz
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 4129 - Global Climate Change GEG 4129 - Global Climate Change 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-SEM
+FullSess.
+	
+Fr 08:30 - 11:20
+	
+60 University (SMD) 041
+	
+Konrad Gajewski
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A02-LAB
+FullSess.
+	
+Mo 11:30 - 12:50
+	
+60 University (SMD) 041
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 4301 - Advanced Geomatics GEG 4301 - Advanced Geomatics 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 14:30 - 17:20
+	
+60 University (SMD) 041
+	
+Michael C. Sawada
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 4504 - Approches méthodologiques et théoriques en géographie et études environnementales GEG 4504 - Approches méthodologiques et théoriques en géographie et études environnementales 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 11:30 - 14:20
+	
+60 University (SMD) 041
+	
+Huhua Cao
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 4529 - Les changements climatiques GEG 4529 - Les changements climatiques 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-SEM
+FullSess.
+	
+Tu 14:30 - 17:20
+	
+800 King Edward (STE) F0126
+	
+André Ernest J. Viau
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 4702 - Le développement des villes GEG 4702 - Le développement des villes 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 19:00 - 21:50
+	
+136 Jean-Jacques L. (VNR) 5040
+	
+Huhua Cao
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 4727 - Séminaire en géographie humaine GEG 4727 - Séminaire en géographie humaine 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-SEM
+FullSess.
+	
+We 14:30 - 17:20
+	
+550 Cumberland (TBT) 0021
+	
+Kenza Benali
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 5710 - Thèmes choisis en géographie physique GEG 5710 - Thèmes choisis en géographie physique 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-SEM
+FullSess.
+	
+Tu 14:30 - 17:20
+	
+800 King Edward (STE) F0126
+	
+André Ernest J. Viau
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 6103 - Spatial Data Analysis GEG 6103 - Spatial Data Analysis 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-SEM
+FullSess.
+	
+Th 19:00 - 21:50
+	
+60 University (SMD) 041
+	
+Michael C. Sawada
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 7996 - Preparation and Presentation of the MSc Thesis Project GEG 7996 - Preparation and Presentation of the MSc Thesis Project 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+S00-REC
+FullSess.
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 7998 - Preparation and Presentation of the M.A. Thesis Project GEG 7998 - Preparation and Presentation of the M.A. Thesis Project 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+S00-REC
+FullSess.
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 9001 - Preparation of Ph.D. Thesis Project GEG 9001 - Preparation of Ph.D. Thesis Project 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+S00-REC
+FullSess.
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Collapse section GEG 9998 - Comprehensive Examination GEG 9998 - Comprehensive Examination 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+S00-REC
+FullSess.
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Staff
+	
+2020-01-06 - 2020-04-04
+	
+Open

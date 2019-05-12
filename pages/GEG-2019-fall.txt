@@ -1,0 +1,1177 @@
+ 	
+Collapse section GEG 1301 - The Physical Environment GEG 1301 - The Physical Environment 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 13:00 - 14:20
+We 11:30 - 12:50
+	
+801 King Edward (MNO) E217
+801 King Edward (MNO) E217
+	
+Antoni G. Lewkowicz
+Antoni G. Lewkowicz
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Th 11:30 - 12:50
+	
+60 University (SMD) 039
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A02-LAB
+FullSess.
+	
+Th 14:30 - 15:50
+	
+60 University (SMD) 039
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 1701 - L'environnement physique GEG 1701 - L'environnement physique 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 10:00 - 11:20
+We 08:30 - 09:50
+	
+65 University (MRT) 221
+145 Jean-Jacq. Luss. (LMX) 390
+	
+Denis Lacelle
+Denis Lacelle
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+We 10:00 - 11:20
+	
+60 University (SMD) 039
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 2108 - Contested Places GEG 2108 - Contested Places 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 16:00 - 17:20
+We 14:30 - 15:50
+	
+65 University (MRT) 205
+65 University (MRT) 205
+	
+Brian Ray
+Brian Ray
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 2304 - Climatology GEG 2304 - Climatology 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 08:30 - 09:50
+Fr 10:00 - 11:20
+	
+60 University (SMD) 430
+57 Louis Pasteur (FTX) 359
+	
+Konrad Gajewski
+Konrad Gajewski
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Tu 10:00 - 11:20
+	
+60 University (SMD) 039
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A02-LAB
+FullSess.
+	
+Fr 11:30 - 12:50
+	
+60 University (SMD) 041
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 2320 - Introduction to Geomatics GEG 2320 - Introduction to Geomatics 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 14:30 - 17:20
+Tu 14:30 - 17:20
+	
+60 University (SMD) 039
+60 University (SMD) 041
+	
+Anders Jensen Knudby
+Anders Jensen Knudby
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+We 11:30 - 12:50
+	
+60 University (SMD) 039
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A02-LAB
+FullSess.
+	
+Th 17:30 - 18:50
+	
+60 University (SMD) 041
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 2510 - Villes durables GEG 2510 - Villes durables 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 13:00 - 14:20
+Fr 11:30 - 12:50
+	
+125 University (MNT) 204
+550 Cumberland (TBT) 315
+	
+Kenza Benali
+Kenza Benali
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 2704 - Climatologie GEG 2704 - Climatologie 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Th 14:30 - 17:20
+	
+550 Cumberland (TBT) 317
+	
+André Ernest J. Viau
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Mo 10:00 - 11:20
+	
+60 University (SMD) 039
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A02-LAB
+FullSess.
+	
+Mo 11:30 - 12:50
+	
+60 University (SMD) 041
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 2918 - Field Camp I GEG 2918 - Field Camp I 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-TLB
+Multi-Term
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Eric James Crighton
+André Ernest J. Viau
+Sonia D
+	
+2019-08-28 - 2019-09-03
+	
+Open
+	
+Collapse section GEG 3106 - Cities and Social Change GEG 3106 - Cities and Social Change 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Th 08:30 - 11:20
+	
+115 Séraphin Marion (HGN) 305
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3107 - Geography of Polar Regions GEG 3107 - Geography of Polar Regions 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 16:00 - 17:20
+We 14:30 - 15:50
+	
+800 King Edward (STE) A0150
+800 King Edward (STE) A0150
+	
+Antoni G. Lewkowicz
+Antoni G. Lewkowicz
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3114 - Biogeography GEG 3114 - Biogeography 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 11:30 - 12:50
+Fr 13:00 - 14:20
+	
+129 Louis Pasteur (LPR) 154
+140 Louis-Pasteur (MRN) 130
+	
+Konrad Gajewski
+Konrad Gajewski
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Th 13:00 - 14:20
+Th 13:00 - 14:20
+	
+60 University (SMD) 039
+60 University (SMD) 041
+	
+Staff
+Staff
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3305 - Geographies of Globalization GEG 3305 - Geographies of Globalization 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 13:00 - 14:20
+Th 11:30 - 12:50
+	
+550 Cumberland (TBT) 323
+65 University (MRT) 252
+	
+Luisa Veronis
+Luisa Veronis
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3306 - Quaternary Paleogeography GEG 3306 - Quaternary Paleogeography 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Fr 14:30 - 15:50
+	
+140 Louis-Pasteur (MRN) 123
+	
+Ian Clark
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Mo 14:30 - 17:20
+	
+140 Louis-Pasteur (MRN) 118
+	
+Ian Clark
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3309 - Social Landscapes of Métis Communities GEG 3309 - Social Landscapes of Métis Communities 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 10:00 - 11:20
+Fr 08:30 - 09:50
+	
+120 University (FSS) 6004
+57 Louis Pasteur (FTX) 316
+	
+Brenda Macdougall
+Brenda Macdougall
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3312 - Advanced GIS GEG 3312 - Advanced GIS 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 11:30 - 14:20
+	
+60 University (SMD) 039
+	
+Michael C. Sawada
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Mo 14:30 - 15:50
+	
+60 University (SMD) 039
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3502 - Hydrologie GEG 3502 - Hydrologie 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 13:00 - 14:20
+Fr 11:30 - 12:50
+	
+200 Wilbrod (WLD) 105
+145 Jean-Jacq. Luss. (LMX) 223
+	
+Denis Lacelle
+Denis Lacelle
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Fr 10:00 - 11:20
+	
+60 University (SMD) 039
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3505 - Télédétection GEG 3505 - Télédétection 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 08:30 - 11:20
+	
+60 University (SMD) 041
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+We 17:30 - 18:50
+	
+60 University (SMD) 041
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3506 - La ville en mutation GEG 3506 - La ville en mutation 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 16:00 - 17:20
+Fr 14:30 - 15:50
+	
+125 University (MNT) 204
+550 Cumberland (TBT) 315
+	
+Kenza Benali
+Kenza Benali
+	
+2019-09-04 - 2019-12-03
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3524 - Histoire de la géographie GEG 3524 - Histoire de la géographie 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 14:30 - 17:20
+	
+145 Jean-Jacq. Luss. (LMX) 223
+	
+Marc Brosseau
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 3712 - SIG avancés GEG 3712 - SIG avancés 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Th 14:30 - 17:20
+	
+60 University (SMD) 041
+	
+Anders Jensen Knudby
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A01-LAB
+FullSess.
+	
+Fr 14:30 - 15:50
+	
+60 University (SMD) 041
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 4104 - Methodological and Theoretical Approaches in Geography and Environmental Studies GEG 4104 - Methodological and Theoretical Approaches in Geography and Environmental Studies 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 11:30 - 14:20
+	
+60 University (SMD) 041
+	
+Jean Bjornson
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 4118 - Environmental Impact Assessment GEG 4118 - Environmental Impact Assessment 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Th 14:30 - 17:20
+	
+45 University (THN) 124
+	
+Renate Margarete Sander-Regier
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 4120 - GIS and Numerical Spatial Analysis GEG 4120 - GIS and Numerical Spatial Analysis 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 11:30 - 14:20
+	
+60 University (SMD) 041
+	
+Michael C. Sawada
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 4127 - Seminar in Human Geography GEG 4127 - Seminar in Human Geography 
+		
+	
+		
+	
+			
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 14:30 - 17:20
+	
+45 University (THN) 054
+	
+Eric James Crighton
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Topic: Livable communities and healthy cities
+	
+Collapse section GEG 4532 - Paysages, lieux et cultures GEG 4532 - Paysages, lieux et cultures 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Mo 14:30 - 17:20
+	
+145 Jean-Jacq. Luss. (LMX) 223
+	
+Marc Brosseau
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 4723 - Géographie de la population GEG 4723 - Géographie de la population 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+Tu 19:00 - 21:50
+	
+55 Laurier (DMS) 9143
+	
+Huhua Cao
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 4726 - Séminaire en géographie physique GEG 4726 - Séminaire en géographie physique 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-SEM
+FullSess.
+	
+We 14:30 - 17:20
+	
+60 University (SMD) 041
+	
+Staff
+	
+2019-09-01 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 4920 - Human Geography Field Camp GEG 4920 - Human Geography Field Camp 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-TLB
+Multi-Term
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Huhua Cao
+	
+2019-08-26 - 2019-09-01
+	
+Open
+	
+Collapse section GEG 4921 - Physical Geography Field Camp GEG 4921 - Physical Geography Field Camp 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-TLB
+Term
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Jean Bjornson
+	
+2019-08-23 - 2019-08-30
+	
+Open
+	
+Collapse section GEG 5105 - Selected Topics in Human Geography GEG 5105 - Selected Topics in Human Geography 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-SEM
+FullSess.
+	
+Th 14:30 - 17:20
+	
+Department
+	
+Brenda Macdougall
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 5109 - Place and Social Transformations GEG 5109 - Place and Social Transformations 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-SEM
+FullSess.
+	
+Mo 14:30 - 17:20
+	
+55 Laurier (DMS) 9143
+	
+Luisa Veronis
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 5310 - Selected Topics in Physical Geography GEG 5310 - Selected Topics in Physical Geography 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-SEM
+FullSess.
+	
+Mo 14:30 - 17:30
+	
+55 Laurier (DMS) 8143
+	
+André Ernest J. Viau
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 5510 - Espaces et lieux entre société et culture GEG 5510 - Espaces et lieux entre société et culture 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-SEM
+FullSess.
+	
+We 14:30 - 17:20
+	
+550 Cumberland (TBT) 311
+	
+Marc Brosseau
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 7996 - Preparation and Presentation of the MSc Thesis Project GEG 7996 - Preparation and Presentation of the MSc Thesis Project 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+F00-REC
+FullSess.
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 7998 - Preparation and Presentation of the M.A. Thesis Project GEG 7998 - Preparation and Presentation of the M.A. Thesis Project 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+F00-REC
+FullSess.
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 9001 - Preparation of Ph.D. Thesis Project GEG 9001 - Preparation of Ph.D. Thesis Project 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+F00-REC
+FullSess.
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open
+	
+Collapse section GEG 9998 - Comprehensive Examination GEG 9998 - Comprehensive Examination 
+		
+	
+		
+	
+		
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+F00-REC
+FullSess.
+	
+TBA 00:00 - 00:00
+	
+ 
+	
+Staff
+	
+2019-09-04 - 2019-12-03
+	
+Open

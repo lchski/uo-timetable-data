@@ -1,0 +1,1864 @@
+
+
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+    <!-- meta information -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    
+    <!-- PlaceHolder to let the child pages set their own description in the meta -->
+    
+        <meta name="description" content="These tools allow you to perform a search for course timetables and exam schedules offered at the University of Ottawa as well search for cancelled or unavailable courses."/>
+    
+    <meta name="author" content='Computing and Communications Services' />
+    <meta name="copyright" content="&copy; University of Ottawa"/>
+    
+    <!-- PlaceHolder to let the child pages set their own title -->
+    <title>
+        
+            Course Timetable
+        
+    </title>
+
+    <!-- Include the Header of Ottawa U -->
+    <link rel="SHORTCUT ICON" href="https://web5.uottawa.ca/assets-templates/3/favicon.ico">
+<link rel="stylesheet" type="text/css" media="screen, projection, print" href="https://web5.uottawa.ca/assets-templates/3/style.css?9ec00ec18c593c88acabd5b180e448e8">
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" media="screen, projection, print" href="https://web5.uottawa.ca/assets-templates/3/style-ie7.css?ccb7e83d6e004f3ce9931f22fd9f9af7"><![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" media="screen, projection, print" href="https://web5.uottawa.ca/assets-templates/3/style-ie.css?2ae0350734756014236c7cc622551142"><![endif]-->
+<!-- if handheld -->
+<meta name="viewport" content="width=Device-width">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="https://web5.uottawa.ca/assets-templates/3/handheld-480px.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1024px)" href="https://web5.uottawa.ca/assets-templates/3/handheld-1024px.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" href="https://web5.uottawa.ca/assets-templates/3/handheld-doublepx.css?d41d8cd98f00b204e9800998ecf8427e">
+<script type="text/javascript" charset="utf-8" src="https://web5.uottawa.ca/assets-templates/3/script.js?773664f4851bb50cc10a3771eff2efaa"></script>
+
+
+    <!-- page variables -->
+    <script type="text/javascript">
+    <!--
+        //var expandNavSection = '';
+        var googleAnalyticsCode = 'UA-5576980-4';
+        var googleAnalyticsLanguage = 'en';
+        var googleAnalyticsEnabled = 'true';  
+    -->
+    </script><!-- /page variables -->
+    
+    <!-- site-specific style sheet and javascript -->
+    <link type="text/css" rel="Stylesheet" media="screen" href="./assets/css/site.css" />
+    <link type="text/css" rel="Stylesheet" href="./styles/base.css" />
+    <link type="text/css" href="styles/jquery-ui-1.8.5.custom.css" rel="stylesheet" />	
+    <script type="text/javascript" src="./scripts/base.js"></script>
+
+    <!-- PlaceHolder to let the child pages to set things in the header -->
+    
+    <style type="text/css"> 
+	    .content{display:none}
+	    .hidable img{display:none}
+	    .footer {display:none}
+	    table.display {width:100%}
+	</style> 
+
+
+    <!-- Include the bottom of the header -->
+    <!-- head-bottom: global include for eventually adding scripts at the bottom of the head on all pages of the University -->
+</head>
+
+<body class='en
+ light
+ theme-01'>
+<form name="aspnetForm" method="post" action="PrintSchedule.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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D2QWAmYPPCsADQEADxYCHwUCAWRkAkQPZBYIAgEPFgIfAAUBMWQCBQ8WAh8ABRAyMDE4IFdpbnRlciBUZXJtZAIHDxYCHwAFATFkAgkPZBYCZg88KwANAQAPFgIfBQIBZGQYRQUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGwzNiRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsNDIkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDIzJGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw1NCRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMzckY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDE4JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw0MyRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMDAkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDU1JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGwxMCRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsNjIkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDE5JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw0NCRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMjUkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDA4JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw2MyRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsNDUkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDAyJGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGwwMyRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsNjQkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDAxJGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw1MCRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsNjUkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDE2JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw1OSRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMjAkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDUxJGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw1OCRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMzQkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDE3JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw1MyRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMjEkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDI4JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGwwNiRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMzUkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDQxJGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw0OCRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMjkkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDA3JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw2MCRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsNDkkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDExJGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw2OCRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMTIkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDQwJGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw1NiRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMTMkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDM5JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGwzMiRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsNjEkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDI2JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw1NyRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMzgkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDE0JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGwzMyRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsNDYkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDI3JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGwzMCRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMTUkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDI0JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw0NyRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMDQkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDY2JGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGwzMSRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMDUkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDUyJGN0bDAwDzwrAAoBCAIBZAUoY3RsMDAkTWFpbkNvbnRlbnRQbGFjZUhvbGRlciRjdGw2NyRjdGwwMA88KwAKAQgCAWQFKGN0bDAwJE1haW5Db250ZW50UGxhY2VIb2xkZXIkY3RsMjIkY3RsMDAPPCsACgEIAgFkBShjdGwwMCRNYWluQ29udGVudFBsYWNlSG9sZGVyJGN0bDA5JGN0bDAwDzwrAAoBCAIBZHy2erIBYxo2+goEsy+JQnvD45Jb" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/v3/SITS/timetable/WebResource.axd?d=gSi1rlt8wuY73eQQH5O4a9L7uj5hdp0OaB4acW8LahSC7MhU_ynIxCRwHKJNuKkDflX_sdPeD-9tZny9YuqZftpLTV81&amp;t=635588435086469712" type="text/javascript"></script>
+
+
+<script src="/v3/SITS/timetable/ScriptResource.axd?d=lTNRURqezq2jtPFCY9qi-9H81vXs5vcJkphYF_XzaBjsTwFbVgUQh_GqXMT3bAueNl0S6XM8-pUZ0HPOPVwM78RfDDKFmIK-8S3ZhtEPuV-SV8atAeiD-p4QOYGK_4YSLyprdg-LUKnMpv6SfS1arJKUbio1&amp;t=ffffffffd2bda0b2" type="text/javascript"></script>
+<script src="/v3/SITS/timetable/ScriptResource.axd?d=GPa50Jz4YFVXeMGpCAvUTOSa_831XeX1mnmO_pENAfdKm-nUB0KsDA4_aIoHe7AmUabVLq9SePlsuc5bDh3cDS5HkksRHWmo3dD1QfEqg9sDUOo97yz6kXkxEHZhkEPOywmEfCTcfNxrprg-Yy_LrETzJ1jai7IZQOPPO7BeM13ORJ4d0&amp;t=ffffffffd2bda0b2" type="text/javascript"></script>
+<script src="scripts/jquery-ui-1.8.5.custom.min.js" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6056A870" />
+</div>
+     <!-- Initialize the script manager for the Language switchS -->
+     <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$JSScriptManager', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+    
+    <div id="main-container" >
+        <!-- Page links -->
+        <ul id="page-links">
+	        <li>
+	            <a id="skip-to-content" href="#main-content">Skip to content</a>
+	        </li>
+	        <li>
+	            <a id="skip-to-leftnav" href="#left-nav">Skip to links</a>
+	        </li>
+	        <li>
+	            <a id="ch-lang-url" rel="alternate" lang="fr-CA" hreflang="fr-CA" href="javascript: WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ChLangUrlLinkButton1&quot;, &quot;fr-CA&quot;, false, &quot;&quot;, &quot;&quot;, false, true))">Français</a>
+	        </li>
+        </ul><!-- /#page-links -->
+        
+        <!-- Include the Banner -->
+            <!-- header include -->
+    <div id="main-banner">
+      <!-- for "back to top" links -->
+      <a id="top" name="top"></a>
+
+      <!-- #main-branding -->
+      <div id="main-branding">
+        <div id="main-branding-logo">
+          <a rel="home" href="http://www.uottawa.ca/welcome.html" title="Home">
+          <img src="https://web5.uottawa.ca/assets-templates/img/uOttawa-logo.png" alt="University of Ottawa, Canada's University" height="53" width="130" /></a>
+        </div>
+        <div id="main-branding-tagline"></div>
+      </div>
+      <!-- /#main-branding -->
+
+     <!-- #main-secondarynav -->
+    <ul id="main-secondarynav">
+      <li class="first"><a id="secondarynav-uozone" href="http://uozone.uottawa.ca/en/frontpage" title="uoZone: login to your secure information">uoZone</a></li>
+	<li><a id="secondarynav-biblio" href="http://www.biblio.uottawa.ca/index-e.php">Library</a></li>
+	<li><a id="secondarynav-programs" href="http://www.admission.uottawa.ca/Default.aspx?tabid=2566">Programs</a></li>
+	<li id="secondarynav-webmail"><a href="http://www.uottawa.ca/email">Webmail</a></li>
+    <li id="secondarynav-more"><h2>Quick Picks</h2>
+        <ul id="quickpick">
+        	<li><a href="http://www.uottawa.ca/search/">Employee Directory</a></li>
+			
+			<li class="new-group"><a href="https://web3.uottawa.ca/infoweb/logon/en.html">InfoWeb</a></li>
+			<li><a href="http://www.uottawa.ca/maps/">Maps</a></li>
+			<li><a href="https://maestro.uottawa.ca/index.asp?LANG=EN">Virtual Campus</a></li>
+			<li><a href="http://www.biblio.uottawa.ca/index-e.php">Library</a></li>
+			<li class="new-group"><a href="http://www.admission.uOttawa.ca/Default.aspx?tabid=2547&amp;source=qp">Campus Tours</a></li>
+			<li><a href="http://www.registrar.uOttawa.ca/Default.aspx?tabid=2681">Undergraduate Programs</a></li>
+			<li><a href="http://www.grad.uottawa.ca/Default.aspx?tabid=1727">Graduate Programs</a></li>
+	        <li><a href="http://www.uOttawa.ca/loansandawards/">Financial Aid</a></li>
+			<li><a href="http://www.financialresources.uottawa.ca/student/payment-university-fees-en.php">Payment of Fees</a></li>	
+	        <li><a href="http://www.admission.uottawa.ca/Default.aspx?tabid=2671">Sessional Dates</a></li>
+			
+			<li class="new-group"><a href="http://www.academiccareers.uottawa.ca/">Academic Careers</a></li>
+			<li><a href="http://www.emergencypreparedness.uottawa.ca/">Emergency Preparedness</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- /#main-secondarynav -->
+  </div>
+  <!-- /#main-banner -->
+
+  <!-- Emergency Banner  -->
+  <script type="text/javascript" src="https://web5.uottawa.ca/emergency/banner/banner-en.js" charset="utf-8"></script>
+  <!-- /header include -->
+       
+        <div id="section-container">
+            <div id="wrapper" class='container 24'>
+                
+                <div id="section-header">
+                    <!-- PlaceHolder for the ParentOrg section -->
+                    
+                        <!-- Example of parent link -->
+                        
+                        <div style="background-color: #333;padding: 10px;outline: medium none;text-transform: uppercase;">
+                            <a href="http://www.registrar.uottawa.ca/Default.aspx?tabid=2613" style="text-decoration: none;color: #fff;">Strategic Enrollment Management (SEM)</a>
+                        </div>
+                        
+                       
+                    
+                    <a href="http://www.uottawa.ca/welcome.html">
+                        <div id="site-id">s</div>
+                    </a>
+   		        </div><!-- /#section-header-->
+            
+                <!-- Place holder for the Left Sidebar -->
+                <!-- LeftSideBar -->
+                
+                <!-- Place holder for the Main Content-->
+                <div id="main-content" class='span-24'>
+                    
+    
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS1510 C00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS1510 C00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 13:00 - 14:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SWT" target="maps">SWT</a> 207</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS1510 C00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Monday 11:30 - 13:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SWT" target="maps">SWT</a> 207</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS1511 D00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS1511 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 428</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS1511 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Wednesday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=LPR" target="maps">LPR</a> 285</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS1511 E00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS1511 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Thursday 13:00 - 14:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=MRT" target="maps">MRT</a> 251</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS1511 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Monday 11:30 - 13:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=MRT" target="maps">MRT</a> 251</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS1511 F00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS1511 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Tuesday 19:00 - 22:00</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 405</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS1512 D00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS1512 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=MRT" target="maps">MRT</a> 015</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS1512 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Wednesday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=WLD" target="maps">WLD</a> 108</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS1512 E00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS1512 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Thursday 13:00 - 14:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=HGN" target="maps">HGN</a> 305</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS1512 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Monday 11:30 - 13:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=HGN" target="maps">HGN</a> 305</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS1512 F00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS1512 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Tuesday 19:00 - 22:00</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 315</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS1513 D00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS1513 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 315</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS1513 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Wednesday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=UCU" target="maps">UCU</a> 205</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS1513 E00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS1513 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Thursday 13:00 - 14:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 407</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS1513 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Monday 11:30 - 13:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=FSS" target="maps">FSS</a> 4012</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS1513 F00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS1513 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Tuesday 19:00 - 22:00</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 220</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2500 B00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2500 B00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Wednesday 11:30 - 13:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 221</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2500 B00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Monday 13:00 - 14:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 221</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2511 D00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2511 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=MNT" target="maps">MNT</a> 204</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2511 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Wednesday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 425</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2511 E00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS2511 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Thursday 13:00 - 14:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 243</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS2511 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Monday 11:30 - 13:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=FSS" target="maps">FSS</a> 6032</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2511 F00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS2511 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Tuesday 19:00 - 22:00</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 242</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2512 E00&lt;br/>(January 08 - April 11)&lt;br/>Hybrid course" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2512 E00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 422</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2512 E00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Wednesday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 317</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2512 F00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS2512 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Thursday 13:00 - 14:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=STT" target="maps">STT</a> 125</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS2512 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Monday 11:30 - 13:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=STT" target="maps">STT</a> 125</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2512 G00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS2512 G00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Tuesday 19:00 - 22:00</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 503</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2513 E00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2513 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 14:30 - 16:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=MRT" target="maps">MRT</a> 219</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2513 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 16:00 - 17:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=MRT" target="maps">MRT</a> 219</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2513 F00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS2513 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Friday 11:30 - 13:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 323</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS2513 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Wednesday 13:00 - 14:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 315</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2513 G00&lt;br/>(January 08 - April 11)&lt;br/>Hybrid course" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS2513 G00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Thursday 16:00 - 17:30</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 390</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section30">FLS2513 G00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Monday 14:30 - 16:00</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 390</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2521 D00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2521 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=MRT" target="maps">MRT</a> 015</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2521 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 0021</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2521 E00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS2521 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Friday 16:00 - 17:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=STT" target="maps">STT</a> 125</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS2521 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Tuesday 14:30 - 16:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 222</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2521 F00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS2521 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Thursday 16:00 - 17:30</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=FSS" target="maps">FSS</a> 6032</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section30">FLS2521 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Monday 14:30 - 16:00</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=SWT" target="maps">SWT</a> 105</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2522 D00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2522 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 16:00 - 17:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=DMS" target="maps">DMS</a> 3105</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2522 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 14:30 - 16:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 339</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2522 E00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS2522 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Friday 10:00 - 11:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 339</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS2522 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Tuesday 8:30 - 10:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=THN" target="maps">THN</a> 124</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2522 F00&lt;br/>(January 08 - April 11)&lt;br/>Hybrid course" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS2522 F00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Thursday 14:30 - 16:00</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=DMS" target="maps">DMS</a> 3105</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section30">FLS2522 F00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Tuesday 16:00 - 17:30</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=STT" target="maps">STT</a> 125</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 2B00&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581 pour/for BIO1540-B&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2581 2B00<br/>(January 08 - April 11)<br/><b>FLS2581 pour/for BIO1540-B</b></td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 223</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='10'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='10' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 F400&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-F4 pour/for PHI1770-A&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section100" scope="col">Section</th><th id="hdr_activity100" scope="col">Activity</th><th id="hdr_day100" scope="col">Day</th><th id="hdr_place100" scope="col">Location</th><th id="hdr_professor100" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section100">FLS2581 F400<br/>(January 08 - April 11)<br/><b>FLS2581-F4 pour/for PHI1770-A</b></td><td class="Activity" headers="hdr_activity100">LEC</td><td class="Day" headers="hdr_day100">Wednesday 10:00 - 11:30</td><td class="Place" headers="hdr_place100"><a href="http://maps.uottawa.ca/?building=KED" target="maps">KED</a> B015</td><td class="Professor" headers="hdr_professor100">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='11'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='11' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 H400&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-H4 pour/for HIS1511-A&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section110" scope="col">Section</th><th id="hdr_activity110" scope="col">Activity</th><th id="hdr_day110" scope="col">Day</th><th id="hdr_place110" scope="col">Location</th><th id="hdr_professor110" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section110">FLS2581 H400<br/>(January 08 - April 11)<br/><b>FLS2581-H4 pour/for HIS1511-A</b></td><td class="Activity" headers="hdr_activity110">LEC</td><td class="Day" headers="hdr_day110">Thursday 13:00 - 14:30</td><td class="Place" headers="hdr_place110"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 405</td><td class="Professor" headers="hdr_professor110">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='12'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='12' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 I200&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-I2 pour/for CRM1701-B&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section120" scope="col">Section</th><th id="hdr_activity120" scope="col">Activity</th><th id="hdr_day120" scope="col">Day</th><th id="hdr_place120" scope="col">Location</th><th id="hdr_professor120" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section120">FLS2581 I200<br/>(January 08 - April 11)<br/><b>FLS2581-I2 pour/for CRM1701-B</b></td><td class="Activity" headers="hdr_activity120">LEC</td><td class="Day" headers="hdr_day120">Monday 16:00 - 17:30</td><td class="Place" headers="hdr_place120"><a href="http://maps.uottawa.ca/?building=CBY" target="maps">CBY</a> E016</td><td class="Professor" headers="hdr_professor120">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='13'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='13' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 P200&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-P2 pour/for POL1502-B&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section130" scope="col">Section</th><th id="hdr_activity130" scope="col">Activity</th><th id="hdr_day130" scope="col">Day</th><th id="hdr_place130" scope="col">Location</th><th id="hdr_professor130" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section130">FLS2581 P200<br/>(January 08 - April 11)<br/><b>FLS2581-P2 pour/for POL1502-B</b></td><td class="Activity" headers="hdr_activity130">LEC</td><td class="Day" headers="hdr_day130">Tuesday 11:30 - 13:00</td><td class="Place" headers="hdr_place130"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 330</td><td class="Professor" headers="hdr_professor130">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='14'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='14' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 S200&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581 pour/for SOC1501-D&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section140" scope="col">Section</th><th id="hdr_activity140" scope="col">Activity</th><th id="hdr_day140" scope="col">Day</th><th id="hdr_place140" scope="col">Location</th><th id="hdr_professor140" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section140">FLS2581 S200<br/>(January 08 - April 11)<br/><b>FLS2581 pour/for SOC1501-D</b></td><td class="Activity" headers="hdr_activity140">LEC</td><td class="Day" headers="hdr_day140">Tuesday 11:30 - 13:00</td><td class="Place" headers="hdr_place140"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 402</td><td class="Professor" headers="hdr_professor140">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='15'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='15' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 SE00&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-SE00 pour/for HSS2721-A00&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section150" scope="col">Section</th><th id="hdr_activity150" scope="col">Activity</th><th id="hdr_day150" scope="col">Day</th><th id="hdr_place150" scope="col">Location</th><th id="hdr_professor150" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section150">FLS2581 SE00<br/>(January 08 - April 11)<br/><b>FLS2581-SE00 pour/for HSS2721-A00</b></td><td class="Activity" headers="hdr_activity150">LEC</td><td class="Day" headers="hdr_day150">Wednesday 10:00 - 11:30</td><td class="Place" headers="hdr_place150"><a href="http://maps.uottawa.ca/?building=LEE" target="maps">LEE</a> C102</td><td class="Professor" headers="hdr_professor150">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='16'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='16' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 Y200&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-Y2 pour/for PSY1502-D&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section160" scope="col">Section</th><th id="hdr_activity160" scope="col">Activity</th><th id="hdr_day160" scope="col">Day</th><th id="hdr_place160" scope="col">Location</th><th id="hdr_professor160" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section160">FLS2581 Y200<br/>(January 08 - April 11)<br/><b>FLS2581-Y2 pour/for PSY1502-D</b></td><td class="Activity" headers="hdr_activity160">LEC</td><td class="Day" headers="hdr_day160">Tuesday 13:00 - 14:30</td><td class="Place" headers="hdr_place160"><a href="http://maps.uottawa.ca/?building=KED" target="maps">KED</a> B015</td><td class="Professor" headers="hdr_professor160">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='17'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='17' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 Y800&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-Y8 pour/for PSY1502-E&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section170" scope="col">Section</th><th id="hdr_activity170" scope="col">Activity</th><th id="hdr_day170" scope="col">Day</th><th id="hdr_place170" scope="col">Location</th><th id="hdr_professor170" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section170">FLS2581 Y800<br/>(January 08 - April 11)<br/><b>FLS2581-Y8 pour/for PSY1502-E</b></td><td class="Activity" headers="hdr_activity170">LEC</td><td class="Day" headers="hdr_day170">Thursday 10:00 - 11:30</td><td class="Place" headers="hdr_place170"><a href="http://maps.uottawa.ca/?building=LEE" target="maps">LEE</a> C102</td><td class="Professor" headers="hdr_professor170">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 2S00&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581 pour/for SOC1501-D&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS2581 2S00<br/>(January 08 - April 11)<br/><b>FLS2581 pour/for SOC1501-D</b></td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Thursday 10:00 - 11:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=LEE" target="maps">LEE</a> C107</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 4E00&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-4E pour/for ECO1502-D&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS2581 4E00<br/>(January 08 - April 11)<br/><b>FLS2581-4E pour/for ECO1502-D</b></td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Thursday 10:00 - 11:30</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 223</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='4'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='4' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 B200&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581 pour/for BIO1540-B&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section40" scope="col">Section</th><th id="hdr_activity40" scope="col">Activity</th><th id="hdr_day40" scope="col">Day</th><th id="hdr_place40" scope="col">Location</th><th id="hdr_professor40" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section40">FLS2581 B200<br/>(January 08 - April 11)<br/><b>FLS2581 pour/for BIO1540-B</b></td><td class="Activity" headers="hdr_activity40">LEC</td><td class="Day" headers="hdr_day40">Monday 11:30 - 13:00</td><td class="Place" headers="hdr_place40"><a href="http://maps.uottawa.ca/?building=THN" target="maps">THN</a> 133</td><td class="Professor" headers="hdr_professor40">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='5'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='5' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 B400&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581 pour/for BIO2533-A&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section50" scope="col">Section</th><th id="hdr_activity50" scope="col">Activity</th><th id="hdr_day50" scope="col">Day</th><th id="hdr_place50" scope="col">Location</th><th id="hdr_professor50" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section50">FLS2581 B400<br/>(January 08 - April 11)<br/><b>FLS2581 pour/for BIO2533-A</b></td><td class="Activity" headers="hdr_activity50">LEC</td><td class="Day" headers="hdr_day50">Monday 10:00 - 11:30</td><td class="Place" headers="hdr_place50"><a href="http://maps.uottawa.ca/?building=FSS" target="maps">FSS</a> 4014</td><td class="Professor" headers="hdr_professor50">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='6'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='6' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 BG00&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-BG00 pour/for BIO1540-A00&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section60" scope="col">Section</th><th id="hdr_activity60" scope="col">Activity</th><th id="hdr_day60" scope="col">Day</th><th id="hdr_place60" scope="col">Location</th><th id="hdr_professor60" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section60">FLS2581 BG00<br/>(January 08 - April 11)<br/><b>FLS2581-BG00 pour/for BIO1540-A00</b></td><td class="Activity" headers="hdr_activity60">LEC</td><td class="Day" headers="hdr_day60">Thursday 11:30 - 13:00</td><td class="Place" headers="hdr_place60"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 330</td><td class="Professor" headers="hdr_professor60">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='7'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='7' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 DM00&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581 pour/for DVM2750-A&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section70" scope="col">Section</th><th id="hdr_activity70" scope="col">Activity</th><th id="hdr_day70" scope="col">Day</th><th id="hdr_place70" scope="col">Location</th><th id="hdr_professor70" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section70">FLS2581 DM00<br/>(January 08 - April 11)<br/><b>FLS2581 pour/for DVM2750-A</b></td><td class="Activity" headers="hdr_activity70">LEC</td><td class="Day" headers="hdr_day70">Friday 11:30 - 13:00</td><td class="Place" headers="hdr_place70"><a href="http://maps.uottawa.ca/?building=CBY" target="maps">CBY</a> E016</td><td class="Professor" headers="hdr_professor70">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='8'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='8' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 E400&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-E4 pour/for ECO1502-D&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section80" scope="col">Section</th><th id="hdr_activity80" scope="col">Activity</th><th id="hdr_day80" scope="col">Day</th><th id="hdr_place80" scope="col">Location</th><th id="hdr_professor80" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section80">FLS2581 E400<br/>(January 08 - April 11)<br/><b>FLS2581-E4 pour/for ECO1502-D</b></td><td class="Activity" headers="hdr_activity80">LEC</td><td class="Day" headers="hdr_day80">Tuesday 16:00 - 17:30</td><td class="Place" headers="hdr_place80"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 402</td><td class="Professor" headers="hdr_professor80">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='9'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='9' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2581 F300&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS2581-F3 pour/for PHI1502-C&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section90" scope="col">Section</th><th id="hdr_activity90" scope="col">Activity</th><th id="hdr_day90" scope="col">Day</th><th id="hdr_place90" scope="col">Location</th><th id="hdr_professor90" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section90">FLS2581 F300<br/>(January 08 - April 11)<br/><b>FLS2581-F3 pour/for PHI1502-C</b></td><td class="Activity" headers="hdr_activity90">LEC</td><td class="Day" headers="hdr_day90">Monday 14:30 - 16:00</td><td class="Place" headers="hdr_place90"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 327</td><td class="Professor" headers="hdr_professor90">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2741 C00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2741 C00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=THN" target="maps">THN</a> 124</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2741 C00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=THN" target="maps">THN</a> 124</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2751 D00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2751 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=THN" target="maps">THN</a> 124</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2751 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Monday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=WLD" target="maps">WLD</a> 110</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2751 E00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS2751 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Friday 14:30 - 16:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=STT" target="maps">STT</a> 125</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS2751 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Wednesday 16:00 - 17:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=SWT" target="maps">SWT</a> 207</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2761 D00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2761 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 16:00 - 17:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SWT" target="maps">SWT</a> 207</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2761 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Monday 14:30 - 16:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SWT" target="maps">SWT</a> 207</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2761 E00&lt;br/>(January 08 - April 11)&lt;br/>Hybrid course" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS2761 E00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Friday 11:30 - 13:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=DMS" target="maps">DMS</a> 3105</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS2761 E00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Wednesday 13:00 - 14:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 422</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2771 D00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2771 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 13:00 - 14:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 427</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2771 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 11:30 - 13:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 427</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2771 E00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS2771 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Wednesday 17:30 - 19:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 330</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS2771 E00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Monday 17:30 - 19:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 330</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2771 F00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS2771 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Friday 10:00 - 11:30</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=MNT" target="maps">MNT</a> 204</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section30">FLS2771 F00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Tuesday 8:30 - 10:00</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=MNT" target="maps">MNT</a> 204</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2772 C00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2772 C00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 16:00 - 17:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=STT" target="maps">STT</a> 125</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2772 C00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Monday 14:30 - 16:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=STT" target="maps">STT</a> 125</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2772 D00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS2772 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Wednesday 17:30 - 19:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=FSS" target="maps">FSS</a> 7035</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section20">FLS2772 D00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Monday 17:30 - 19:00</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=FSS" target="maps">FSS</a> 7035</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS2791 A00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS2791 A00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 13:00 - 14:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=STT" target="maps">STT</a> 125</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS2791 A00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 11:30 - 13:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=STT" target="maps">STT</a> 125</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3500 B00" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS3500 B00</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Not available at this time.</td><td class="Place" headers="hdr_place10">Not available at this time.</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3581 A300&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS3581-A3 pour/for ADM2720-M&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS3581 A300<br/>(January 08 - April 11)<br/><b>FLS3581-A3 pour/for ADM2720-M</b></td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 17:30 - 19:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 407</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='2'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='2' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3581 B400&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS3581 pour/for BIO2533-A&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section20" scope="col">Section</th><th id="hdr_activity20" scope="col">Activity</th><th id="hdr_day20" scope="col">Day</th><th id="hdr_place20" scope="col">Location</th><th id="hdr_professor20" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section20">FLS3581 B400<br/>(January 08 - April 11)<br/><b>FLS3581 pour/for BIO2533-A</b></td><td class="Activity" headers="hdr_activity20">LEC</td><td class="Day" headers="hdr_day20">Monday 10:00 - 11:30</td><td class="Place" headers="hdr_place20"><a href="http://maps.uottawa.ca/?building=FSS" target="maps">FSS</a> 4014</td><td class="Professor" headers="hdr_professor20">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='3'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='3' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3581 DM00&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS3581 pour/for DVM2750-A&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section30" scope="col">Section</th><th id="hdr_activity30" scope="col">Activity</th><th id="hdr_day30" scope="col">Day</th><th id="hdr_place30" scope="col">Location</th><th id="hdr_professor30" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section30">FLS3581 DM00<br/>(January 08 - April 11)<br/><b>FLS3581 pour/for DVM2750-A</b></td><td class="Activity" headers="hdr_activity30">LEC</td><td class="Day" headers="hdr_day30">Friday 11:30 - 13:00</td><td class="Place" headers="hdr_place30"><a href="http://maps.uottawa.ca/?building=CBY" target="maps">CBY</a> E016</td><td class="Professor" headers="hdr_professor30">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='4'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='4' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3581 G200&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS3581-G2 pour/for GEG2508-B&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section40" scope="col">Section</th><th id="hdr_activity40" scope="col">Activity</th><th id="hdr_day40" scope="col">Day</th><th id="hdr_place40" scope="col">Location</th><th id="hdr_professor40" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section40">FLS3581 G200<br/>(January 08 - April 11)<br/><b>FLS3581-G2 pour/for GEG2508-B</b></td><td class="Activity" headers="hdr_activity40">LEC</td><td class="Day" headers="hdr_day40">Monday 11:30 - 13:00</td><td class="Place" headers="hdr_place40"><a href="http://maps.uottawa.ca/?building=CBY" target="maps">CBY</a> E016</td><td class="Professor" headers="hdr_professor40">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='5'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='5' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3581 SE00&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS3581-SE00 pour/for HSS2721-A00&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section50" scope="col">Section</th><th id="hdr_activity50" scope="col">Activity</th><th id="hdr_day50" scope="col">Day</th><th id="hdr_place50" scope="col">Location</th><th id="hdr_professor50" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section50">FLS3581 SE00<br/>(January 08 - April 11)<br/><b>FLS3581-SE00 pour/for HSS2721-A00</b></td><td class="Activity" headers="hdr_activity50">LEC</td><td class="Day" headers="hdr_day50">Wednesday 10:00 - 11:30</td><td class="Place" headers="hdr_place50"><a href="http://maps.uottawa.ca/?building=LEE" target="maps">LEE</a> C102</td><td class="Professor" headers="hdr_professor50">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='6'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='6' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3581 H400&lt;br/>(January 08 - April 11)&lt;br/>&lt;b>FLS3581-H4 pour/for HIS1511-A&lt;/b>" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section60" scope="col">Section</th><th id="hdr_activity60" scope="col">Activity</th><th id="hdr_day60" scope="col">Day</th><th id="hdr_place60" scope="col">Location</th><th id="hdr_professor60" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section60">FLS3581 H400<br/>(January 08 - April 11)<br/><b>FLS3581-H4 pour/for HIS1511-A</b></td><td class="Activity" headers="hdr_activity60">LEC</td><td class="Day" headers="hdr_day60">Tuesday 14:30 - 16:00</td><td class="Place" headers="hdr_place60"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 0021</td><td class="Professor" headers="hdr_professor60">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3751 B00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS3751 B00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=LMX" target="maps">LMX</a> 243</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS3751 B00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Monday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=WLD" target="maps">WLD</a> 108</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3761 A00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS3761 A00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 227</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS3761 A00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=SMD" target="maps">SMD</a> 221</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3771 B00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS3771 B00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Wednesday 17:30 - 19:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=FSS" target="maps">FSS</a> 4012</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS3771 B00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Monday 17:30 - 19:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=FSS" target="maps">FSS</a> 4012</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS3773 B00&lt;br/>(January 08 - April 11)&lt;br/>Hybrid course" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS3773 B00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 319</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS3773 B00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 327</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS4500 A00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS4500 A00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 11:30 - 13:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=MRT" target="maps">MRT</a> 252</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS4500 A00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 13:00 - 14:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 325</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS4581 A00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS4581 A00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Thursday 8:30 - 10:00</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=KED" target="maps">KED</a> B015</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr><tr class="odd">
+			<td class="Section" headers="hdr_section10">FLS4581 A00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Tuesday 10:00 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=KED" target="maps">KED</a> B015</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS4774 B00&lt;br/>(January 08 - April 11)&lt;br/>Hybrid course" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS4774 B00<br/>(January 08 - April 11)<br/>Hybrid course</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Wednesday 14:30 - 17:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=STT" target="maps">STT</a> 125</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+ <div class='1'>
+    <!-- Element to hide the schedule -->
+    <!-- <a href="#" class="hidable">
+        <img src="./images/plus.gif" alt="Expand schedule"/> -->
+        Course schedule for the term: 
+        2018 Winter Term
+    <!-- </a> -->
+    
+    <!-- Schedule information -->
+    <div id='1' class='schedule'>
+        <div>
+	<table class="display" cellspacing="0" Summary="Schedule for FLS4791 A00&lt;br/>(January 08 - April 11)" border="0" style="border-collapse:collapse;">
+		<tr>
+			<th id="hdr_section10" scope="col">Section</th><th id="hdr_activity10" scope="col">Activity</th><th id="hdr_day10" scope="col">Day</th><th id="hdr_place10" scope="col">Location</th><th id="hdr_professor10" scope="col">Professor</th>
+		</tr><tr>
+			<td class="Section" headers="hdr_section10">FLS4791 A00<br/>(January 08 - April 11)</td><td class="Activity" headers="hdr_activity10">LEC</td><td class="Day" headers="hdr_day10">Friday 8:30 - 11:30</td><td class="Place" headers="hdr_place10"><a href="http://maps.uottawa.ca/?building=TBT" target="maps">TBT</a> 0021</td><td class="Professor" headers="hdr_professor10">Not available at this time.</td>
+		</tr>
+	</table>
+</div>
+    </div>
+</div>
+<br />
+
+                </div><!-- /#main-content -->
+                
+                <!-- Place holder for the Right Sidebar -->
+                
+        
+                <!-- Include the Quickpicks -->
+                <!-- footer include -->
+<div id="main-siteinfo">
+
+<ul id="main-siteinfonav">
+	<li><a id="siteinfonav-requirements" href="http://www.uottawa.ca/require.html">System Requirements</a></li>
+	<li><a id="siteinfonav-feedback" target="_blank" href="https://web9.uottawa.ca/services/ccs/feedback/">Feedback<span class="hide"> on this Web site</span></a></li>
+	<li><a id="siteinfonav-privacy" href="http://web5.uottawa.ca/admingov/privacy.html">Privacy Policy</a></li>
+	<li class="last"><a id="siteinfonav-accessibility" href="http://www.uottawa.ca/accessibility/">Accessibility</a></li>
+	<li class="right last"><a id="siteinfonav-giving" href="http://www.giving.uottawa.ca/home.html?utm_source=uottawa&amp;utm_medium=templates-footer&amp;utm_term=Give%2Bto%2Bthe%2BUniversity&amp;utm_campaign=templates-footer">Give to the University</a></li>
+</ul><!-- /#main-siteinfonav -->
+<div id="main-statements">
+<span id="copyright">&copy; University of Ottawa</span>
+</div><!-- /#main-statements -->
+</div><!-- /#main-siteinfo -->
+<!-- /footer include -->
+
+       
+                <!-- PlaceHolder for the Bottom Content-->
+                
+        
+            </div><!-- /#wrapper -->
+       </div><!-- /#section-container -->
+       
+       <!-- used in the templates to close border-->
+       <div id="section-closure"></div>
+   </div><!-- /#main-container-->
+
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+<script type="text/javascript">
+    if (googleAnalyticsEnabled) {
+        //Add language parameter to the uri of the page 
+        var uri = document.location.pathname + document.location.hash + document.location.search;
+        if (-1 != document.location.hash.indexOf('?') || "" != document.location.search)
+            uri += '&';
+        else
+            uri += '?';
+        uri += 'lang=' + googleAnalyticsLanguage;
+
+        //Initialize the google analytics code
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', googleAnalyticsCode]);
+        _gaq.push(['_trackPageview', uri]);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') 
+              + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    }
+</script>
+</body>
+</html>
