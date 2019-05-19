@@ -4,7 +4,13 @@ import ast
 
 class TermSubjectParser:
     def __init__(self, discipline, year, term):
-        
+        self.course_descriptions = self.load_course_descriptions(discipline)
+
+        self.courses = self.load_courses_from_file(discipline, year, term)
+        self.courses = self.extract_sections_by_course(self.courses)
+        self.courses = self.clean_badly_processed_courses(self.courses)
+        self.courses = self.convert_courses_to_dataframe(self.courses)
+        self.courses = self.describe_course_sections(self.courses, self.course_descriptions)
 
     def handle_section(self, section):
         sectionCode = section[0].split('-')[0]
@@ -49,7 +55,6 @@ class TermSubjectParser:
     ###
     # Get the courses from a file, into a dict.
     ###
-
     def load_courses_from_file(self, discipline, year, term):
         courses = {}
 
@@ -68,13 +73,10 @@ class TermSubjectParser:
                 courses[course[0:8]] = course
 
         return courses
-                
-    ###courses = load_courses_from_file('HIS', 2019, 'fall')
 
     ###
     # Get the sections from each course, adding as a list to the dict item.
     ###
-
     def extract_sections_by_course(self, courses_to_process):
         sections_by_course = {}
         
@@ -100,8 +102,6 @@ class TermSubjectParser:
             
         return sections_by_course
 
-    ###courses = extract_sections_by_course(courses)
-
     ## Clean badly processed courses :)
     def clean_badly_processed_courses(self, courses):
         courses_to_process = courses.copy()
@@ -118,8 +118,6 @@ class TermSubjectParser:
         print(str(len(coursesToDelete)) + " courses removed due to badly formed data.")
         
         return courses_to_process
-
-    ###courses = clean_badly_processed_courses(courses)
 
     def convert_courses_to_dataframe(self, courses):
         ## 1. Convert the courses object to a dataframe
@@ -162,13 +160,8 @@ class TermSubjectParser:
         
         return courses_by_section_by_day
         
-    ##courses_by_section_by_day = convert_courses_to_dataframe(courses)
-
     def load_course_descriptions(self, discipline):
-        return pd.read_csv(str('data/courses/' + discipline + '.csv')).set_index('code')
-
-    ##course_descriptions = load_course_descriptions('HIS')
-    ##course_descriptions
+        return pd.read_csv(str('./data/courses/' + discipline + '.csv')).set_index('code')
 
     def describe_course_sections(self, courses_by_section_by_day, course_descriptions):
         described_courses_by_section_by_day = pd.merge(courses_by_section_by_day.reset_index(1), course_descriptions, left_index=True, right_index=True)
@@ -177,5 +170,3 @@ class TermSubjectParser:
         described_courses_by_section_by_day.index.names = ['course', 'section']
 
         return described_courses_by_section_by_day
-
-    ###described_courses_by_section_by_day = describe_course_sections(courses_by_section_by_day, course_descriptions)
