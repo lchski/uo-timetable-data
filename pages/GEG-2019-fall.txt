@@ -75,11 +75,11 @@ Details
 A00-LEC
 FullSess.
 	
-Mo 10:00 - 11:20
-We 08:30 - 09:50
+Tu 10:00 - 11:20
+Th 08:30 - 09:50
 	
-65 University (MRT) 221
-145 Jean-Jacq. Luss. (LMX) 390
+550 Cumberland (TBT) 325
+85 University (UCU) 205
 	
 Denis Lacelle
 Denis Lacelle
@@ -97,7 +97,7 @@ Details
 A01-LAB
 FullSess.
 	
-We 10:00 - 11:20
+Tu 08:30 - 09:50
 	
 60 University (SMD) 039
 	
@@ -989,189 +989,5 @@ TBA 00:00 - 00:00
 Jean Bjornson
 	
 2019-08-23 - 2019-08-30
-	
-Open
-	
-Collapse section GEG 5105 - Selected Topics in Human Geography GEG 5105 - Selected Topics in Human Geography 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-A00-SEM
-FullSess.
-	
-Th 14:30 - 17:20
-	
-Department
-	
-Brenda Macdougall
-	
-2019-09-04 - 2019-12-03
-	
-Open
-	
-Collapse section GEG 5109 - Place and Social Transformations GEG 5109 - Place and Social Transformations 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-A00-SEM
-FullSess.
-	
-Mo 14:30 - 17:20
-	
-55 Laurier (DMS) 9143
-	
-Luisa Veronis
-	
-2019-09-04 - 2019-12-03
-	
-Open
-	
-Collapse section GEG 5310 - Selected Topics in Physical Geography GEG 5310 - Selected Topics in Physical Geography 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-A00-SEM
-FullSess.
-	
-Mo 14:30 - 17:30
-	
-55 Laurier (DMS) 8143
-	
-André Ernest J. Viau
-	
-2019-09-04 - 2019-12-03
-	
-Open
-	
-Collapse section GEG 5510 - Espaces et lieux entre société et culture GEG 5510 - Espaces et lieux entre société et culture 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-A00-SEM
-FullSess.
-	
-We 14:30 - 17:20
-	
-550 Cumberland (TBT) 311
-	
-Marc Brosseau
-	
-2019-09-04 - 2019-12-03
-	
-Open
-	
-Collapse section GEG 7996 - Preparation and Presentation of the MSc Thesis Project GEG 7996 - Preparation and Presentation of the MSc Thesis Project 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-F00-REC
-FullSess.
-	
-TBA 00:00 - 00:00
-	
- 
-	
-Staff
-	
-2019-09-04 - 2019-12-03
-	
-Open
-	
-Collapse section GEG 7998 - Preparation and Presentation of the M.A. Thesis Project GEG 7998 - Preparation and Presentation of the M.A. Thesis Project 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-F00-REC
-FullSess.
-	
-TBA 00:00 - 00:00
-	
- 
-	
-Staff
-	
-2019-09-04 - 2019-12-03
-	
-Open
-	
-Collapse section GEG 9001 - Preparation of Ph.D. Thesis Project GEG 9001 - Preparation of Ph.D. Thesis Project 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-F00-REC
-FullSess.
-	
-TBA 00:00 - 00:00
-	
- 
-	
-Staff
-	
-2019-09-04 - 2019-12-03
-	
-Open
-	
-Collapse section GEG 9998 - Comprehensive Examination GEG 9998 - Comprehensive Examination 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-F00-REC
-FullSess.
-	
-TBA 00:00 - 00:00
-	
- 
-	
-Staff
-	
-2019-09-04 - 2019-12-03
 	
 Open

@@ -18,8 +18,10 @@ Fr 13:00 - 14:20
 125 University (MNT) 204
 550 Cumberland (TBT) 315
 	
-Staff
-Staff
+Corinne Gaudin
+Heather Murray
+Corinne Gaudin
+Heather Murray
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -72,8 +74,8 @@ Th 08:30 - 09:50
 55 Laurier (DMS) 1160
 55 Laurier (DMS) 1160
 	
-Staff
-Staff
+François Lalonde
+François Lalonde
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -153,8 +155,8 @@ Th 11:30 - 12:50
 800 King Edward (STE) H0104
 800 King Edward (STE) H0104
 	
-Staff
-Staff
+François Lalonde
+François Lalonde
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -181,7 +183,7 @@ Th 08:30 - 09:50
 200 Wilbrod (WLD) 108
 	
 Staff
-Staff
+M. Mark Stolarik
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -259,7 +261,7 @@ Th 19:00 - 21:50
 	
 60 University (SMD) 425
 	
-Staff
+M. Mark Stolarik
 	
 2020-01-06 - 2020-04-04
 	
@@ -284,8 +286,8 @@ Fr 16:00 - 17:20
 55 Laurier (DMS) 1120
 55 Laurier (DMS) 1120
 	
-Staff
-Staff
+Heather Murray
+Heather Murray
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -311,8 +313,8 @@ Th 11:30 - 12:50
 125 University (MNT) 201
 125 University (MNT) 201
 	
-Staff
-Staff
+Micheline Lessard
+Micheline Lessard
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -361,8 +363,8 @@ We 08:30 - 09:50
 65 University (MRT) 205
 65 University (MRT) 205
 	
-Staff
-Staff
+Richard Connors
+Richard Connors
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -523,8 +525,8 @@ Th 14:30 - 15:50
 60 University (SMD) 224
 60 University (SMD) 224
 	
-Staff
-Staff
+Corinne Gaudin
+Corinne Gaudin
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -573,8 +575,8 @@ We 08:30 - 09:50
 60 University (SMD) 224
 60 University (SMD) 224
 	
-Staff
-Staff
+François Lalonde
+François Lalonde
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -600,8 +602,8 @@ We 11:30 - 12:50
 65 University (MRT) 252
 65 University (MRT) 252
 	
-Staff
-Staff
+Jean-François Lozier
+Jean-François Lozier
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -627,8 +629,8 @@ Fr 11:30 - 12:50
 60 University (SMD) 222
 60 University (SMD) 222
 	
-Staff
-Staff
+Peter Bischoff
+Peter Bischoff
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -654,8 +656,8 @@ Fr 08:30 - 09:50
 60 University (SMD) 222
 550 Cumberland (TBT) 323
 	
-Staff
-Staff
+Meredith Terretta
+Meredith Terretta
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -681,8 +683,8 @@ We 08:30 - 09:50
 60 University (SMD) 222
 60 University (SMD) 222
 	
-Staff
-Staff
+Nicole J. St-Onge
+Nicole J. St-Onge
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -706,7 +708,7 @@ Th 14:30 - 17:20
 	
 550 Cumberland (TBT) 315
 	
-Staff
+Eda Kranakis
 	
 2020-01-06 - 2020-04-04
 	
@@ -787,8 +789,8 @@ We 11:30 - 12:50
 65 University (MRT) 251
 65 University (MRT) 251
 	
-Staff
-Staff
+Richard Connors
+Richard Connors
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -814,8 +816,8 @@ We 08:30 - 09:50
 60 University (SMD) 226
 60 University (SMD) 226
 	
-Staff
-Staff
+Eric Allina
+Eric Allina
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -841,8 +843,8 @@ Th 13:00 - 14:20
 60 University (SMD) 227
 60 University (SMD) 227
 	
-Staff
-Staff
+Ryme Seferdjeli
+Ryme Seferdjeli
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -870,15 +872,15 @@ Th 14:30 - 15:50
 60 University (SMD) 221
 60 University (SMD) 222
 	
-Staff
-Staff
+Eric Allina
+Eric Allina
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
 	
 Open
 	
-Topic: Human Rights in the Age of the Univers Declaration
+Topic: Slavery and Anti-slavery in Global History
 	
 Collapse section HIS 3304 - Canadian Environmental History HIS 3304 - Canadian Environmental History 
 		
@@ -899,8 +901,8 @@ Fr 11:30 - 12:50
 60 University (SMD) 226
 60 University (SMD) 226
 	
-Staff
-Staff
+Daniel Rück
+Daniel Rück
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -926,8 +928,8 @@ Th 11:30 - 12:50
 60 University (SMD) 221
 60 University (SMD) 221
 	
-Staff
-Staff
+Serge Durflinger
+Serge Durflinger
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -951,7 +953,7 @@ Tu 19:00 - 21:50
 	
 60 University (SMD) 222
 	
-Staff
+M. Mark Stolarik
 	
 2020-01-06 - 2020-04-04
 	
@@ -974,7 +976,7 @@ Mo 14:30 - 17:20
 	
 550 Cumberland (TBT) 315
 	
-Staff
+Pierre Anctil
 	
 2020-01-06 - 2020-04-04
 	
@@ -999,13 +1001,42 @@ Th 11:30 - 12:50
 550 Cumberland (TBT) 323
 60 University (SMD) 427
 	
-Staff
-Staff
+Michel Guy Bock
+Michel Guy Bock
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
 	
 Open
+	
+Collapse section HIS 3510 - Thèmes choisis en histoire ancienne I HIS 3510 - Thèmes choisis en histoire ancienne I 
+		
+	
+		
+	
+			
+	
+  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
+Details
+	
+A00-LEC
+FullSess.
+	
+We 10:00 - 11:20
+Fr 08:30 - 09:50
+	
+55 Laurier (DMS) 11143
+55 Laurier (DMS) 11143
+	
+Geoffrey Greatrex
+Geoffrey Greatrex
+	
+2020-01-06 - 2020-04-04
+2020-01-06 - 2020-04-04
+	
+Open
+	
+Topic: Le monde d'Hérodote
 	
 Collapse section HIS 3764 - La France de l'ancien régime de 1500 à 1799 HIS 3764 - La France de l'ancien régime de 1500 à 1799 
 		
@@ -1051,7 +1082,7 @@ We 14:30 - 17:20
 	
 55 Laurier (DMS) 10143
 	
-Staff
+Eda Kranakis
 	
 2020-01-06 - 2020-04-04
 	
@@ -1062,7 +1093,7 @@ Collapse section HIS 4135 - Seminar in Canadian History HIS 4135 - Seminar in Ca
 	
 		
 	
-		
+			
 	
   	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
 Details
@@ -1079,6 +1110,8 @@ Staff
 2020-01-06 - 2020-04-04
 	
 Open
+	
+Topic: Canada's 'Consumer Revolution'
 	
 Collapse section HIS 4141 - Seminar in Comparative History HIS 4141 - Seminar in Comparative History 
 		
@@ -1097,7 +1130,7 @@ Mo 19:00 - 21:50
 	
 55 Laurier (DMS) 10143
 	
-Staff
+Pierre Anctil
 	
 2020-01-06 - 2020-04-04
 	
@@ -1108,7 +1141,7 @@ Collapse section HIS 4151 - Seminar in American History HIS 4151 - Seminar in Am
 	
 		
 	
-		
+			
 	
   	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
 Details
@@ -1120,11 +1153,13 @@ We 08:30 - 11:20
 	
 55 Laurier (DMS) 10143
 	
-Staff
+Galen Perras
 	
 2020-01-06 - 2020-04-04
 	
 Open
+	
+Topic: American Foreign Policy History Since 1914
 	
 Collapse section HIS 4184 - Seminar in Asian History HIS 4184 - Seminar in Asian History 
 		
@@ -1143,7 +1178,7 @@ Fr 14:30 - 17:20
 	
 55 Laurier (DMS) 9143
 	
-Staff
+Micheline Lessard
 	
 2020-01-06 - 2020-04-04
 	
@@ -1168,8 +1203,8 @@ Th 16:00 - 17:20
 55 Laurier (DMS) 8161
 45 University (THN) 054
 	
-Staff
-Staff
+Meredith Terretta
+Meredith Terretta
 	
 2020-01-06 - 2020-04-04
 2020-01-06 - 2020-04-04
@@ -1243,7 +1278,7 @@ Th 14:30 - 17:20
 	
 55 Laurier (DMS) 8143
 	
-Staff
+Alberto Florez-Malagon
 	
 2020-01-06 - 2020-04-04
 	
@@ -1289,40 +1324,11 @@ We 14:30 - 17:20
 	
 55 Laurier (DMS) 11143
 	
-Staff
+Michel Guy Bock
 	
 2020-01-06 - 2020-04-04
 	
 Open
-	
-Collapse section HIS 4550 - Séminaire en histoire ancienne HIS 4550 - Séminaire en histoire ancienne 
-		
-	
-		
-	
-			
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-A00-SEM
-FullSess.
-	
-Tu 11:30 - 12:50
-Fr 13:00 - 14:20
-	
-145 Jean-Jacq. Luss. (LMX) 223
-120 University (FSS) 4013
-	
-Staff
-Staff
-	
-2020-01-06 - 2020-04-04
-2020-01-06 - 2020-04-04
-	
-Open
-	
-Topic: Sages, saints et sophistes à la fin de l’Antiquité
 	
 Collapse section HIS 4700 - Séminaire en méthodologie historique HIS 4700 - Séminaire en méthodologie historique 
 		
@@ -1364,122 +1370,7 @@ Tu 08:30 - 11:20
 	
 161 Louis Pasteur (CBY) B012
 	
-Staff
-	
-2020-01-06 - 2020-04-04
-	
-Open
-	
-Collapse section HIS 5122 - Research Seminar HIS 5122 - Research Seminar 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-A00-SEM
-FullSess.
-	
-We 14:30 - 17:20
-	
-55 Laurier (DMS) 9143
-	
-Staff
-	
-2020-01-06 - 2020-04-04
-	
-Open
-	
-Collapse section HIS 5503 - Séminaire en histoire du Canada I HIS 5503 - Séminaire en histoire du Canada I 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-B00-SEM
-FullSess.
-	
-Tu 14:30 - 17:20
-	
-55 Laurier (DMS) 9143
-	
-Staff
-	
-2020-01-06 - 2020-04-04
-	
-Open
-	
-Collapse section HIS 5522 - Séminaire de recherche HIS 5522 - Séminaire de recherche 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-A00-SEM
-FullSess.
-	
-We 14:30 - 17:20
-	
-55 Laurier (DMS) 8143
-	
-Staff
-	
-2020-01-06 - 2020-04-04
-	
-Open
-	
-Collapse section HIS 6103 - Seminar in American History I HIS 6103 - Seminar in American History I 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-A00-SEM
-FullSess.
-	
-Mo 14:30 - 17:20
-	
-55 Laurier (DMS) 11143
-	
-Staff
-	
-2020-01-06 - 2020-04-04
-	
-Open
-	
-Collapse section HIS 7330 - Seminar on Comparative History HIS 7330 - Seminar on Comparative History 
-		
-	
-		
-	
-		
-	
-  	Section 	Days & Times 	Room 	Instructor 	Meeting Dates 	Status
-Details
-	
-A00-SEM
-FullSess.
-	
-Tu 08:30 - 11:20
-	
-55 Laurier (DMS) 10143
-	
-Staff
+Jean-François Lozier
 	
 2020-01-06 - 2020-04-04
 	
