@@ -95,7 +95,7 @@ class TermSubjectParser:
 
             for section in sectionData:
                 try:
-                    sectionInfo = handle_section(section.split('\n\t\n'))
+                    sectionInfo = self.handle_section(section.split('\n\t\n'))
                 except:
                     pass
 
