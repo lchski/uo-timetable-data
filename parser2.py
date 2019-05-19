@@ -12,6 +12,9 @@ class TermSubjectParser:
         self.courses = self.convert_courses_to_dataframe(self.courses)
         self.courses = self.describe_course_sections(self.courses, self.course_descriptions)
 
+    def get_courses(self):
+        return self.courses
+
     def handle_section(self, section):
         sectionCode = section[0].split('-')[0]
         
